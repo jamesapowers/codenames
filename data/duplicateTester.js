@@ -3,7 +3,7 @@ const test = require('./default.js');
 const RunTest = (words) => {
   let usedWords = {};
   let repeatedWords = [];
-  
+
   for (let word of words) {
     if (usedWords[word]) {
       repeatedWords.push(word);
@@ -15,4 +15,4 @@ const RunTest = (words) => {
   return repeatedWords;
 }
 
-console.log(RunTest(test));
+console.log(RunTest(test)); 
