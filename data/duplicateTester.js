@@ -15,4 +15,4 @@ const RunTest = (words) => {
   return repeatedWords;
 }
 
-console.log(RunTest(test));
+console.log(RunTest(test)); 
