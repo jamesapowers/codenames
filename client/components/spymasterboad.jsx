@@ -13,20 +13,19 @@ class SpyMasterboard extends React.Component {
   }
 
   createBoard(size) {
-    const cards = drawCards(size * size);
-
-  }
-
-  drawCards(amount) {
-    let cards = new Array(amount);
+    let cards = new Array(size);
     let selected = {n: 1};
-    return cards.map(card => {
-      let word = 'n';
-      while (selected[word]) {
-        word = wordBank[Math.floor(Math.random() * wordBank.length)];
-      }
-      return word;
+    return cards.map(col => {
+      let row = new Array(size);
+      return row.map(card => {
+        let word = 'n';
+        while (selected[word]) {
+          word = wordBank[Math.floor(Math.random() * wordBank.length)];
+        }
+        return {word: word, status: 'blank',};
+      });
     });
+    return cards;
   }
 
   onTileClick(tile) {
