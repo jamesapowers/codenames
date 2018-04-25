@@ -14,17 +14,39 @@ class SpyMasterboard extends React.Component {
 
   createBoard(size) {
     let cards = new Array(size);
-    let selected = {n: 1};
     return cards.map(col => {
       let row = new Array(size);
       return row.map(card => {
-        let word = 'n';
-        while (selected[word]) {
-          word = wordBank[Math.floor(Math.random() * wordBank.length)];
-        }
-        return {word: word, status: 'blank',};
+        return {word: '', status: 'blank',};
       });
     });
+    cards = this.placeSpyTiles(cards);
+    return cards;
+  }
+
+  placeSpyTiles(cards) {
+    //one 8 other 9 with a death tile
+    let advantage = Math.round(Math.random());
+    let red = 9;
+    let blue = 8;
+    if (advantage) {
+      red = 8;
+      blue = 9
+    }
+    while (red > 0 && blue > 0) {
+      let redRow = Math.floor(Math.random() * cards.length);
+      let redCol = Math.floor(Math.random() * cards.length);
+      let blueRow = Math.floor(Math.random() * cards.length);
+      let blueCol = Math.floor(Math.random() * cards.length);
+      if (red !== 0 && cards[redRow][redCol].status === 'blank') {
+        red -= 1;
+        cards[redRow][redCol].status === 'red';
+      }
+      if (blue !== 0 && cards[blueRow][blueCol].status === 'blank') {
+        blue -= 1;
+        cards[blueRow][blueCol].status === 'blue';
+      }
+    }
     return cards;
   }
 
