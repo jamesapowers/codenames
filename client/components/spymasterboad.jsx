@@ -25,7 +25,6 @@ class SpyMasterboard extends React.Component {
   }
 
   placeSpyTiles(cards) {
-    //one 8 other 9 with a death tile
     let advantage = Math.round(Math.random());
     let red = 9;
     let blue = 8;
