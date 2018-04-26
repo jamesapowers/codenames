@@ -1,5 +1,6 @@
 import React from 'react';
 import Row from './row';
+import Options from './options';
 import wordBank from '../../data/default';
 
 class SpyMasterboard extends React.Component {
@@ -54,7 +55,12 @@ class SpyMasterboard extends React.Component {
   }
 
   render() {
-    return ();
+    return (
+      <div>
+      <Row board={this.state.board}></Row>
+      <Options></Options>
+      </div>
+    );
   }
 }
 
