@@ -32,7 +32,11 @@ class Gameboard extends React.Component {
   }
 
   render() {
-    return ();
+    return (
+      <div>
+        <Row board={this.state.board}></Row>
+      </div>
+    );
   }
 }
 
