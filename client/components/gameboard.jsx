@@ -34,7 +34,10 @@ class Gameboard extends React.Component {
   render() {
     return (
       <div>
-        <Row board={this.state.board}></Row>
+        <Row
+          board={this.state.board}
+          onTileClick={this.onTileClick}>
+        </Row>
       </div>
     );
   }
