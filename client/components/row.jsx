@@ -1,7 +1,7 @@
 import React from 'react';
 import Tile from './tile';
 
-const Row = () => {
+const Row = (props) => {
   return ();
 }
 
