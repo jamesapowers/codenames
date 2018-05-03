@@ -6,12 +6,10 @@ const Tile = ({ tile, onTileClick, tileLoc }) => {
     tileDisplay = '';
   }
   return (
-    <div>
-      <div
-        className={tile.status}
-        onClick={ () => (onTileClick(tileLoc)) }>
-        {tileDisplay}
-      </div>
+    <div
+      className={tile.status}
+      onClick={ () => (onTileClick(tileLoc)) }>
+      {tileDisplay}
     </div>
   );
 }
