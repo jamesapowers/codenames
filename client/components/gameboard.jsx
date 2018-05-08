@@ -18,9 +18,10 @@ class Gameboard extends React.Component {
       let row = new Array(size);
       return row.map(card => {
         let word = 'n';
-        while (selected[word]) {
+        while (!selected[word]) {
           word = wordBank[Math.floor(Math.random() * wordBank.length)];
         }
+        selected[word] = 1;
         return {word: word, status: 'blank',};
       });
     });
