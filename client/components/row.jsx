@@ -7,14 +7,18 @@ const Row = ({ board, onTileClick }) => {
       {
         board.map(row => {
           return (
-            row.map(tile => {
-              return (
-                  <Tile
-                  tile={tile}
-                  onTileClick={onTileClick}>
-                  </Tile>
-              );
-            });
+            <div className="row">
+              {
+                row.map(tile => {
+                  return (
+                      <Tile
+                      tile={tile}
+                      onTileClick={onTileClick}>
+                      </Tile>
+                  );
+                });
+              }
+            </div>
           );
         });
       }
