@@ -4,7 +4,6 @@ import axios from 'axios';
 import data from '../../data/default';
 import Gameboard from './gameboard';
 import SpyMasterboard from './spymasterboard';
-import Options from './options';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,13 +19,9 @@ class App extends React.Component {
 
   }
 
-  onClickNewGame() {
-    
-  }
-
   render() {
     return (
-      <Options onClickNewGame={this.onTileClick} />
+
     );
   }
 }

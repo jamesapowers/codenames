@@ -2,6 +2,7 @@ import React from 'react';
 import Row from './row';
 import Options from './options';
 import wordBank from '../../data/default';
+import Options from './options';
 
 class SpyMasterboard extends React.Component {
   constructor(props) {
@@ -54,11 +55,15 @@ class SpyMasterboard extends React.Component {
     console.log('you are the spymaster!')
   }
 
+  onClickNewGame() {
+
+  }
+
   render() {
     return (
       <div>
-      <Row board={this.state.board}></Row>
-      <Options></Options>
+        <Row board={this.state.board}></Row>
+        <Options onClickNewGame={this.onTileClick} />
       </div>
     );
   }

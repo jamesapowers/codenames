@@ -1,5 +1,6 @@
 import React from 'react';
 import Row from './row';
+import Options from './options';
 
 class Gameboard extends React.Component {
   constructor(props) {
@@ -32,6 +33,10 @@ class Gameboard extends React.Component {
 
   }
 
+  onClickNewGame() {
+
+  }
+
   render() {
     return (
       <div>
@@ -39,6 +44,7 @@ class Gameboard extends React.Component {
           board={this.state.board}
           onTileClick={this.onTileClick}>
         </Row>
+        <Options onClickNewGame={this.onTileClick} />
       </div>
     );
   }
