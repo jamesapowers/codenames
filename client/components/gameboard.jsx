@@ -34,7 +34,9 @@ class Gameboard extends React.Component {
   }
 
   onClickNewGame() {
-
+    this.setState({
+      board: this.createBoard(5),
+    });
   }
 
   render() {
