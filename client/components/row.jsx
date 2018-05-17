@@ -5,15 +5,17 @@ const Row = ({ board, onTileClick }) => {
   return (
     <div>
       {
-        board.map(row => {
+        board.map((row, rowIdx) => {
+          let col = 0;
           return (
             <div className="row">
               {
-                row.map(tile => {
+                row.map((tile, tileIdx) => {
                   return (
                       <Tile
                       tile={tile}
-                      onTileClick={onTileClick}>
+                      onTileClick={onTileClick}
+                      tileLoc={[rowIdx, tileIdx]}>
                       </Tile>
                   );
                 });
