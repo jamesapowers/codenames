@@ -20,8 +20,14 @@ class App extends React.Component {
   }
 
   render() {
+    let Board = SpyMasterboard;
+    if (gameboard) {
+      Board = Gameboard;
+    }
     return (
-
+      <Board
+        wordBank={this.state.data};
+      />
     );
   }
 }
