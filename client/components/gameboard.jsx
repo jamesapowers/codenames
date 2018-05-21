@@ -29,8 +29,21 @@ class Gameboard extends React.Component {
     return cards;
   }
 
-  onTileClick(tile) {
-
+  onTileClick(loc) {
+    let curStatus = this.state.board[loc[0]][loc[1]].status;
+    if (curStatus === 'blank') {
+      curStatus = 'red';
+    } else if (curStatus === 'red') {
+      curStatus = 'blue';
+    } else if (curStatus === 'blue') {
+      curStatus = 'neutral';
+    } else {
+      curStatus = 'black';
+    }
+    this.state.board[loc[0]][loc[1]].status = curStatus;
+    this.setState({
+      board: this.state.board,
+    });
   }
 
   onClickNewGame() {
