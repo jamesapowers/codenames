@@ -7,6 +7,7 @@ class Gameboard extends React.Component {
     super(props);
     this.state = {
       board: this.createBoard(5),
+      wordBank: this.props.wordBank,
     };
 
     this.onTileClick = this.onTileClick.bind(this);
@@ -20,7 +21,7 @@ class Gameboard extends React.Component {
       return row.map(card => {
         let word = 'n';
         while (!selected[word]) {
-          word = wordBank[Math.floor(Math.random() * wordBank.length)];
+          word = this.state.wordBank[Math.floor(Math.random() * this.state.wordBank.length)];
         }
         selected[word] = 1;
         return {word: word, status: 'blank',};
