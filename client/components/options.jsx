@@ -4,8 +4,8 @@ const Options = ({ onClickNewGame }) => {
   return (
     <div>
       <button
-      type='button'
-      onClick={onClickNewGame()}>
+        type='button'
+        onClick={onClickNewGame()}>
         New Game
       </button>
     </div>
