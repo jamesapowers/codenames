@@ -13,9 +13,9 @@ const Row = ({ board, onTileClick }) => {
                 row.map((tile, tileIdx) => {
                   return (
                       <Tile
-                      tile={tile}
-                      onTileClick={onTileClick}
-                      tileLoc={[rowIdx, tileIdx]}>
+                        tile={tile}
+                        onTileClick={onTileClick}
+                        tileLoc={[rowIdx, tileIdx]}>
                       </Tile>
                   );
                 });
