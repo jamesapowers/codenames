@@ -34,6 +34,9 @@ class SpyMasterboard extends React.Component {
       red = 8;
       blue = 9
     }
+    let blackRow = Math.floor(Math.random() * cards.length);
+    let backCol = Math.floor(Math.random() * cards.length);
+    cards[blackRow][backCol].status = 'black';
     while (red > 0 && blue > 0) {
       let redRow = Math.floor(Math.random() * cards.length);
       let redCol = Math.floor(Math.random() * cards.length);
