@@ -10,12 +10,12 @@ const Row = ({ board, onTileClick }) => {
           return (
             <div className="row">
               {
-                row.map((tile, tileIdx) => {
+                row.map((tile, colIdx) => {
                   return (
                       <Tile
                         tile={tile}
                         onTileClick={onTileClick}
-                        tileLoc={[rowIdx, tileIdx]}>
+                        tileLoc={[rowIdx, colIdx]}>
                       </Tile>
                   );
                 });
