@@ -1,4 +1,5 @@
 const test = require('./default.js');
+//const test = require('./heroes.js');
 
 const RunTest = (words) => {
   let usedWords = {};
