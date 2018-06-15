@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Gamemode = () => {
+const Gamemode = ({onGamemodeClick}) => {
+
+  return ();
 }
 
 export default Gamemode;
