@@ -1,5 +1,5 @@
 import React from 'react';
-import Gamemode from './gamemode';
+import Gamemodes from './gamemodes';
 
 const Options = ({ onClickNewGame onGamemodeClick}) => {
   return (
@@ -9,7 +9,7 @@ const Options = ({ onClickNewGame onGamemodeClick}) => {
         onClick={onClickNewGame()}>
         New Game
       </button>
-      <Gamemode
+      <Gamemodes
         onGamemodeClick={onGamemodeClick}
       />
     </div>
