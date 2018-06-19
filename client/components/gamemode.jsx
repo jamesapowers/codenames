@@ -2,7 +2,11 @@ import React from 'react';
 
 const Gamemode = ({onGamemodeClick}) => {
 
-  return ();
+  return (
+    <div>
+
+    </div>
+  );
 }
 
 export default Gamemode;
