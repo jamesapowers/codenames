@@ -61,7 +61,10 @@ class Gameboard extends React.Component {
           board={this.state.board}
           onTileClick={this.onTileClick}>
         </Row>
-        <Options onClickNewGame={this.onClickNewGame} />
+        <Options
+          onClickNewGame={this.onClickNewGame}
+          gamemodes={this.props.gamemodes} 
+        />
       </div>
     );
   }
