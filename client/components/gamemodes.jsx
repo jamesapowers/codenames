@@ -8,11 +8,11 @@ const Gamemodes = ({ onGamemodeClick }) => {
       {
         row.map((gamemode) => {
           return (
-              <Tile
+              <Gamemode
                 onGamemodeClick={onGamemodeClick}
                 gamemode={gamemode}
                 >
-              </Tile>
+              </Gamemode>
           );
         });
       }
