@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Gamemode = ({onGamemodeClick}) => {
+const Gamemode = ({ onGamemodeClick, gamemode }) => {
 
   return (
-    <div>
-
+    <div
+      onClick={ () => (onGamemodeClick(tileLoc)) }>
+      {gamemode}
     </div>
   );
 }
