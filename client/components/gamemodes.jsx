@@ -1,12 +1,12 @@
 import React from 'react';
 import Gamemode from './gamemode';
 
-const Gamemodes = ({ onGamemodeClick }) => {
+const Gamemodes = ({ gamemodes, onGamemodeClick }) => {
 
   return (
     <div className="gamemodes">
       {
-        row.map((gamemode, idx) => {
+        gamemodes.map((gamemode, idx) => {
           return (
               <Gamemode
                 onGamemodeClick={onGamemodeClick}
