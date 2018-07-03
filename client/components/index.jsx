@@ -27,7 +27,8 @@ class App extends React.Component {
     }
     return (
       <Board
-        wordBank={this.state.data};
+        wordBank={this.state.data}
+        gamemodes={this.state.gamemodes}
       />
     );
   }
