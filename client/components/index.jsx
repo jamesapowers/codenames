@@ -11,7 +11,7 @@ class App extends React.Component {
     this.state = {
       data: data,
       gameboard: true,
-      gamemodes: 'Classic',
+      gamemodes: ['Classic', 'Super Heroes',
     };
     this.onTileClick = this.onTileClick.bind(this);
   }
