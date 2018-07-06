@@ -12,6 +12,8 @@ class Gameboard extends React.Component {
 
     this.onTileClick = this.onTileClick.bind(this);
     this.onClickNewGame = this.onClickNewGame.bind(this);
+    this.onGamemodeClick = this.onGamemodeClick.bind(this);
+
   }
 
   createBoard(size) {
@@ -54,6 +56,10 @@ class Gameboard extends React.Component {
     });
   }
 
+  onGamemodeClick(position) {
+
+  }
+
   render() {
     return (
       <div>
@@ -63,7 +69,7 @@ class Gameboard extends React.Component {
         </Row>
         <Options
           onClickNewGame={this.onClickNewGame}
-          gamemodes={this.props.gamemodes} 
+          gamemodes={this.props.gamemodes}
         />
       </div>
     );
