@@ -70,7 +70,6 @@ class SpyMasterboard extends React.Component {
         <Row board={this.state.board}></Row>
         <Options
           onClickNewGame={this.onTileClick}
-          gamemodes={this.props.gamemodes} 
         />
       </div>
     );
