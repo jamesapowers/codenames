@@ -34,14 +34,14 @@ class SpyMasterboard extends React.Component {
       red = 8;
       blue = 9
     }
-    let blackRow = Math.floor(Math.random() * cards.length);
-    let backCol = Math.floor(Math.random() * cards.length);
+    let blackRow = this.cardRandomizer(cards.length);
+    let backCol = this.cardRandomizer(cards.length);
     cards[blackRow][backCol].status = 'black';
     while (red > 0 && blue > 0) {
-      let redRow = Math.floor(Math.random() * cards.length);
-      let redCol = Math.floor(Math.random() * cards.length);
-      let blueRow = Math.floor(Math.random() * cards.length);
-      let blueCol = Math.floor(Math.random() * cards.length);
+      let redRow = this.cardRandomizer(cards.length);
+      let redCol = this.cardRandomizer(cards.length);
+      let blueRow = this.cardRandomizer(cards.length);
+      let blueCol = this.cardRandomizer(cards.length);
       if (red !== 0 && cards[redRow][redCol].status === 'blank') {
         red -= 1;
         cards[redRow][redCol].status === 'red';
@@ -55,7 +55,7 @@ class SpyMasterboard extends React.Component {
   }
 
   cardRandomizer(length) {
-
+    return Math.floor(Math.random() * length)
   }
 
   onTileClick(tile) {
