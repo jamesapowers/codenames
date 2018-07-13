@@ -54,6 +54,10 @@ class SpyMasterboard extends React.Component {
     return cards;
   }
 
+  cardRandomizer(length) {
+
+  }
+
   onTileClick(tile) {
     console.log('you are the spymaster!')
   }
