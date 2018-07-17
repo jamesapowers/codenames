@@ -15,15 +15,15 @@ class SpyMasterboard extends React.Component {
   }
 
   createBoard(size) {
-    let cards = new Array(size);
-    return cards.map(col => {
+    let tiles = new Array(size);
+    return tiles.map(col => {
       let row = new Array(size);
       return row.map(card => {
         return {word: '', status: 'blank',};
       });
     });
-    cards = this.placeSpyTiles(cards);
-    return cards;
+    tiles = this.placeSpyTiles(tiles);
+    return tiles;
   }
 
   placeSpyTiles(tiles) {
