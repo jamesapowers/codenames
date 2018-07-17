@@ -26,7 +26,7 @@ class SpyMasterboard extends React.Component {
     return cards;
   }
 
-  placeSpyTiles(cards) {
+  placeSpyTiles(tiles) {
     let advantage = Math.round(Math.random());
     let red = 9;
     let blue = 8;
@@ -34,24 +34,24 @@ class SpyMasterboard extends React.Component {
       red = 8;
       blue = 9
     }
-    let blackRow = this.cardRandomizer(cards.length);
-    let backCol = this.cardRandomizer(cards.length);
-    cards[blackRow][backCol].status = 'black';
+    let blackRow = this.cardRandomizer(tiles.length);
+    let backCol = this.cardRandomizer(tiles.length);
+    tiles[blackRow][backCol].status = 'black';
     while (red > 0 && blue > 0) {
-      let redRow = this.cardRandomizer(cards.length);
-      let redCol = this.cardRandomizer(cards.length);
-      let blueRow = this.cardRandomizer(cards.length);
-      let blueCol = this.cardRandomizer(cards.length);
-      if (red !== 0 && cards[redRow][redCol].status === 'blank') {
+      let redRow = this.cardRandomizer(tiles.length);
+      let redCol = this.cardRandomizer(tiles.length);
+      let blueRow = this.cardRandomizer(tiles.length);
+      let blueCol = this.cardRandomizer(tiles.length);
+      if (red !== 0 && tiles[redRow][redCol].status === 'blank') {
         red -= 1;
-        cards[redRow][redCol].status === 'red';
+        tiles[redRow][redCol].status === 'red';
       }
-      if (blue !== 0 && cards[blueRow][blueCol].status === 'blank') {
+      if (blue !== 0 && tiles[blueRow][blueCol].status === 'blank') {
         blue -= 1;
-        cards[blueRow][blueCol].status === 'blue';
+        tiles[blueRow][blueCol].status === 'blue';
       }
     }
-    return cards;
+    return tiles;
   }
 
   cardRandomizer(length) {
