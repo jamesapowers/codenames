@@ -8,12 +8,12 @@ class Gameboard extends React.Component {
     this.state = {
       board: this.createBoard(5),
       wordBank: this.props.wordBank,
+      gamemode: this.props.gamemodes[0],
     };
 
     this.onTileClick = this.onTileClick.bind(this);
     this.onClickNewGame = this.onClickNewGame.bind(this);
     this.onGamemodeClick = this.onGamemodeClick.bind(this);
-
   }
 
   createBoard(size) {
@@ -57,7 +57,6 @@ class Gameboard extends React.Component {
   }
 
   onGamemodeClick(position) {
-
   }
 
   render() {
