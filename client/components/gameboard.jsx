@@ -57,6 +57,13 @@ class Gameboard extends React.Component {
   }
 
   onGamemodeClick(position) {
+    if (this.props.gamemodes[position] !== this.state.gamemode) {
+      this.setState({
+        gamemode: this.props.gamemodes[position],
+        wordBank: ,
+      });
+      this.createBoard(5);
+    }
   }
 
   render() {
