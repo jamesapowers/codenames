@@ -62,7 +62,7 @@ class Gameboard extends React.Component {
         gamemode: this.props.gamemodes[position],
         wordBank: ,
       });
-      this.createBoard(5);
+      this.onClickNewGame();
     }
   }
 
