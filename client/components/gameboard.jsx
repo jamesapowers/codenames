@@ -2,13 +2,14 @@ import React from 'react';
 import Row from './row';
 import Options from './options';
 import DefaultBank from '../../data/default';
+import HeroesBank from '../../data/heroes';
 
 class Gameboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       board: this.createBoard(5),
-      wordBank: this.props.wordBank,
+      wordBank: DefaultBank,
       gamemode: this.props.gamemodes[0],
     };
 
