@@ -1,6 +1,7 @@
 import React from 'react';
 import Row from './row';
 import Options from './options';
+import DefaultBank from '../../data/default';
 
 class Gameboard extends React.Component {
   constructor(props) {
