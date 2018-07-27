@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import data from '../../data/default';
+import DefaultBank from '../../data/default';
+import HeroesBank from '../../data/heroes';
 import Gameboard from './gameboard';
 import SpyMasterboard from './spymasterboard';
 
@@ -9,7 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: data,
+      data: DefaultBank,
       gameboard: true,
       gamemodes: ['Classic', 'Super Heroes'],
     };
