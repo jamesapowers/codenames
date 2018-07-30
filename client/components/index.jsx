@@ -12,7 +12,10 @@ class App extends React.Component {
     this.state = {
       data: DefaultBank,
       gameboard: true,
-      gamemodes: ['Classic', 'Super Heroes'],
+      gamemodes: [
+        {type: Classic, data: Gameboard},
+        {type: SuperHeroes, data: SpyMasterboard},
+      ],
     };
     this.onTileClick = this.onTileClick.bind(this);
   }
