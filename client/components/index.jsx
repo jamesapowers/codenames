@@ -13,7 +13,7 @@ class App extends React.Component {
       data: DefaultBank,
       gameboard: true,
       gamemodes: [
-        {type: Classic, data: Gameboard},
+        {type: 'Classic', data: 'Gameboard'},
         {type: SuperHeroes, data: SpyMasterboard},
       ],
     };
