@@ -61,8 +61,8 @@ class Gameboard extends React.Component {
   onGamemodeClick(position) {
     if (this.props.gamemodes[position] !== this.state.gamemode) {
       this.setState({
-        gamemode: this.props.gamemodes[position],
-        wordBank: ,
+        gamemode: this.props.gamemodes[position].type,
+        wordBank: this.props.gamemodes[position].data,
       });
       this.onClickNewGame();
     }
