@@ -10,7 +10,7 @@ const Gamemodes = ({ gamemodes, onGamemodeClick }) => {
           return (
               <Gamemode
                 onGamemodeClick={onGamemodeClick}
-                gamemode={gamemode}
+                gamemode={gamemode[idx].type}
                 position={idx}>
               </Gamemode>
           );
