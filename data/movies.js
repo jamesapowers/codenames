@@ -19,4 +19,23 @@ module.exports = [
   'Pirates of the Caribbean: Dead Men Tell No Tales', 'Fast & Furious 6', 'Deadpool',
   'Guardians of the Galaxy', 'Maleficent',
   //2000s top 50 Movies
+  'Barney', 'The Lord of the Rings: The Return of the King',
+  "Pirates of the Caribbean: Dead Man's Chest", 'The Dark Knight',
+  "Harry Potter and the Philosopher's Stone", "Pirates of the Caribbean: At World's End",
+  'Harry Potter and the Order of the Phoenix', 'Harry Potter and the Half-Blood Prince',
+  'The Lord of the Rings: The Two Towers', 'Shrek 2', 'Harry Potter and the Goblet of Fire',
+  'Spider-Man 3', 'Ice Age: Dawn of the Dinosaurs', 'Harry Potter and the Chamber of Secrets',
+  'The Lord of the Rings: The Fellowship of the Ring', 'Finding Nemo',
+  'Star Wars: Episode III – Revenge of the Sith', 'Transformers: Revenge of the Fallen',
+  'Spider-Man', 'Shrek the Third', 'Harry Potter and the Prisoner of Azkaban',
+  'Indiana Jones and the Kingdom of the Crystal Skull', 'Spider-Man 2',
+  'The Da Vinci Code', 'The Chronicles of Narnia: The Lion, the Witch and the Wardrobe',
+  'The Matrix Reloaded', '2012', 'Transformers', 'Up', 'The Twilight Saga: New Moon',
+  'Ice Age: The Meltdown', 'Pirates of the Caribbean: The Curse of the Black Pearl',
+  'Star Wars: Episode II – Attack of the Clones', 'Kung Fu Panda', 'The Incredibles',
+  'Hancock', 'Ratatouille', 'The Passion of the Christ', 'Mamma Mia!',
+  'Madagascar: Escape 2 Africa', 'Casino Royale', 'War of the Worlds', 'Quantum of Solace',
+  'I Am Legend', 'Iron Man', 'Night at the Museum', 'King Kong', 'Mission: Impossible 2',
+  'The Day After Tomorrow', 'Madagascar',
+  //1990s top 50 Movies
 ];
