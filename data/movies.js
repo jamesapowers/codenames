@@ -78,7 +78,8 @@ module.exports = [
   'The Untouchables', 'Three Men and a Baby', 'The Secret of My Success', 'Stakeout', 'Lethal Weapon',
   'The Witches of Eastwick', 'Predator', 'Rain Man', 'Who Framed Roger Rabbit', 'Coming to America',
   'Big', 'Twins', 'Crocodile Dundee II', 'Die Hard', 'The Naked Gun: From the Files of Police Squad!',
-  'Cocktail', 'Beetlejuice', 'Indiana Jones and the Last Crusade', 'Batman', 'Back to the Future Part II',
+  'Cocktail', 'Beetl  ejuice', 'Indiana Jones and the Last Crusade', 'Batman', 'Back to the Future Part II',
   "Look Who's Talking", 'Dead Poets Society', 'Lethal Weapon 2', 'Honey, I Shrunk the Kids', 'Ghostbusters II',
-  'The Little Mermaid', 'Born on the Fourth of July'
+  'The Little Mermaid', 'Born on the Fourth of July',
+  //top 100 all time
 ];
