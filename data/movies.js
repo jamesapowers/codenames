@@ -82,9 +82,9 @@ module.exports = [
   "Look Who's Talking", 'Dead Poets Society', 'Lethal Weapon 2', 'Honey, I Shrunk the Kids', 'Ghostbusters II',
   'The Little Mermaid', 'Born on the Fourth of July',
   //top 100 all time
-  'CITIZEN KANE', 'CASABLANCA', 'THE GODFATHER', 'GONE WITH THE WIND', 'LAWRENCE OF ARABIA', 'THE WIZARD OF OZ',
-  'THE GRADUATE', 'ON THE WATERFRONT', "SINGIN' IN THE RAIN", "IT'S A WONDERFUL LIFE",
-  'SUNSET BLVD.', 'THE BRIDGE ON THE RIVER KWAI', 'SOME LIKE IT HOT', 'Star Wars', 'ALL ABOUT EVE',
+  'Citizen Kane', 'Casablanca', 'The Godfather', 'Gone with the Wind', 'Lawrence of Arabia', 'The Wizard of OZ',
+  'The Graduate', 'On the Waterfront', "Singin' in the Rain", "It's a Wonderful Life",
+  'Sunset BLVD.', 'The Bridge on the River Kwai', 'Some Like it Hot', 'Star Wars', 'All About Eve',
   'THE AFRICAN QUEEN', 'PSYCHO', 'CHINATOWN', "ONE FLEW OVER THE CUCKOO'S NEST", 'THE GRAPES OF WRATH',
   '2001: A SPACE ODYSSEY', 'THE MALTESE FALCON', 'RAGING BULL', 'DR. STRANGELOVE',
   'BONNIE AND CLYDE', 'APOCALYPSE NOW', 'MR. SMITH GOES TO WASHINGTON', 'THE TREASURE OF THE SIERRA MADRE',
