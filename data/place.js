@@ -67,7 +67,6 @@ module.exports = [
   'Puebla', 'Douala', 'Medellin', 'Nagpur', 'Cali', 'Omdurman', 'Nanchang', 'Brisbane', 'Bursa',
   'Tashkent', 'Houston', 'Nagoya', 'Mogadishu', 'Isfahen', 'Paris', 'Accra', 'Managua',
   'Kowloon', 'Lanzhou', 'Baku', 'Guatamala City', 'Luanda', 'Bucharest',
-
   // US Landmarks
   'Acadia National Park', 'Alamo', 'Alcatraz', 'American Museum of Natural History',
   'Animal Kingdom', 'Arches National Park', 'Area 51', 'Arlington National Cemetery',
@@ -100,7 +99,7 @@ module.exports = [
   'Mojave Desert', 'Mono Lake', 'Montezuma Castle National Monument, Arizona', 'Monticello', 'Montpellier',
   'Monument Valley', 'Moody Gardens', 'Mount McKinley (Denali)', 'Mount Rushmore',
   'Mount St. Helens National Volcanic Monument', 'Mount Washington', 'New Hampshire',
-  'Myrtle Beach', 'Napa Valley', 'National Cowboy and Western Heritage Museum', 'National Mall', 
+  'Myrtle Beach', 'Napa Valley', 'National Cowboy and Western Heritage Museum', 'National Mall',
   'National September 11 Memorial & Museum', 'The National WWII Museum, New Orleans',
   'National Zoological Park', 'Nauvoo Historic District', 'Navy Pier', 'Newport Mansions, RI',
   'Niagra Falls', 'North Cascades National Park', 'Oak Alley Plantation', 'Old Faithful Geyser',
@@ -122,5 +121,13 @@ module.exports = [
   'Walk of Fame, Hollywood Blvd, California', 'Wall Street', 'Washington Monument',
   'Washington National Cathedral', 'White House', 'World of Coca-Cola', 'Wright Brothers National Memorial',
   'Wrigley Field', 'Yellowstone National Park', 'Yosemite National Park', 'Zion National Park',
-
+  //50 Largest Restaurants
+  'Subway', "McDonald's", 'Starbucks', 'KFC', 'Burger King', 'Pizza Hut', "Domino's Pizza",
+  "Dunkin' Donuts", 'Baskin-Robbins', 'Hunt Brothers Pizza', 'Taco Bell', "Wendy's", "Hardee's",
+  'Orange Julius','Sibylla', 'Dairy Queen', 'Little Caesars', 'Tim Hortons', "Papa John's Pizza",
+  'CNHLS', 'Sonic Drive-In', 'Costa', "Arby's", 'Jollibee', 'Popeyes Louisiana Kitchen', "Jimmy John's",
+  'Jack in the Box', 'Ting Hsin', 'Chick-fil-A', "Applebee's", 'Panera Bread', 'Chipotle Mexican Grill',
+  'Dicos', 'Pelicana Chicken', 'Shanghai Shihao', 'Panda Express', 'Sukiya', 'Pala Hamburger',
+  "Chester's International", 'MOS Burger', "Denny's", "Church's Chicken", 'IHOP', 'WingStreet',
+  "Chili's", 'Café Coffee Day', "Auntie Anne's", "Carl's Jr.", 'Five Guys', 'Quiznos',
 ];
